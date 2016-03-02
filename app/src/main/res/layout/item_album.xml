@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="4dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/imageView_album_fragment"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_album_black_36dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_album_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="专辑"
+        android:textSize="16sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/relativeLayout3"
+        android:layout_toEndOf="@+id/relativeLayout3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/textView_count_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1首"
+        android:textSize="12sp"
+        android:layout_below="@+id/textView_album_album"
+        android:layout_alignLeft="@+id/textView_album_album"
+        android:layout_alignStart="@+id/textView_album_album" />
+</RelativeLayout>
